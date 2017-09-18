@@ -1,42 +1,128 @@
 ## Part 4: Quiz time!
 
-Copy the questions below into a file `part-4/quiz.md`. Then, write your answer to each question directly below it.
+Q1:  When you run a command in the terminal, where does BASH look for that command?
+  A: Bash looks for commands in the default path which is stored in the $PATH environment variable.
 
-The quiz is worth __50 points__ in total.
+Q2:  On a UNIX computer, how do you stop a running process?
+  A: ^c ('control-c') stops a running process that is in focus (i.e. not running in the background). Some apps require, like node.js require you hit ^c twice to quit.
 
-_Reminder: you can use the internet to help you answer these questions :)_
+Q3:  What packages do you have installed via homebrew?
+  A: git, icu4c, openssl, readline, httrack, mysql, openssl@1.1, wget hub, node, postgresql.
 
-Q1- When you run a command in the terminal, where does BASH look for that command?
-Q2- On a UNIX computer, how do you stop a running process?
-Q3- What packages do you have installed via homebrew?
-Q4- On a UNIX computer, how do you find the process id of a running process?
-Q5- In a terminal, what does control-c do?
-Q6- In a terminal, what does control-a do?
-Q7- In a terminal, what does control-e do?
-Q8- What keyboard shortcut do you use to split the screen in your editor?
-Q9- What keyboard shortcut do you use to split the screen in your terminal?
-Q10- When a terminal command completes, how can you tell if it was successful or not?
-Q11- What does your `~/.gitconfig` have in it? (paste the whole file here)
-Q12- What is the difference between a relative and absolute path?
-Q13- Lets say you have the following file structure
+Q4:  On a UNIX computer, how do you find the process id of a running process?
+  A: `pgrep + program name` will display the process id.  I also researched `pidof`. However, a quick test for this question using `pidof firefox`. threw the error `bash: pidof: command not found` whereas `pgrep firefox` display `356`.
 
-  ```
+Q5:  In a terminal, what does control-c do?
+  A: `control-c` (`^c`) stops the current process.
+
+Q6:  In a terminal, what does control-a do?
+  A: Ctrl-a places the cursor at the beginning of the command line.
+
+Q7:  In a terminal, what does control-e do?
+  A: Ctrl-e places the cursor at the end of the command line.
+
+Q8:  What keyboard shortcut do you use to split the screen in your editor?
+  A: In VS Code Cmd-\ (command+\) splits the editor window into an additional pane.
+
+Q9:  What keyboard shortcut do you use to split the screen in your terminal?
+  A: I use VS Code.  Control-` (control+backtick) opens the built-in terminal window.  A ‘+’ icon adds additional terminal windows and a selector allows me to choose which terminal session I want to view.
+
+Q10:  When a terminal command completes, how can you tell if it was successful or not?
+  A: It depends on the command and program. In general, the absence of an error message and return to the `$` prompt indicates success. In the case of node.js the running program returns `>` (greater than sign) as a prompt. In the case of postgreSQL nothing is returned so you're okay.
+
+Q11:  What does your `~/.gitconfig` have in it? (paste the whole file here)
+  A:  D2rdMac:/ d2rd$ git config --list
+  credential.helper=osxkeychain
+  color.ui=auto
+  user.name=Glenn-David Daniel
+  user.email=d2rd@outlook.com
+  D2rdMac:/ d2rd$
+
+Q12:  What is the difference between a relative and absolute path?
+  A:  Relative path references its top level as the present working directory.
+  Absolute paths reference from the root directory.
+
+Q13:  Lets say you have the following file structure
   ~
   └── Projects
-      ├── pinterest-for-dogs
-      │   ├── README.md
-      │   └── package.json
-      └── linkedin-for-dancers
-          ├── README.md
-          └── package.json
-  ```
+         |── pinterest-for-dogs
+         │   ├── README.md
+         │    └── package.json
+         └──linkedin-for-dancers
+               └── README.md
+               └── package.json
 
   And you were in the `linkedin-for-dancers` folder. What command would you use to change folders to the `pinterest-for-dogs` folder?
+  A:  cd ../pinterest-for-dogs.
 
-Q14- What keyboard shortcut do you use, in your editor, to go to a file in the project you have open?
-Q15- What files or folders do you want all git repositories to ignore?
-Q16- What is the main difference between `==` and `===` in JavaScript?
+Q14:  What keyboard shortcut do you use, in your editor, to go to a file in the project you have open?
+  A:  control-tab (control+tab) displays a pop-up of all open files.  You then use tab to select the desired file.  
+  -OR- 
+  Command-P (command+p) opens a search window that displays open files in the active folder.   You can open any file by its name when you type it into the search field.
 
-### Requirements
+Q15:  What files or folders do you want all git repositories to ignore?
+  A:
+    # Logs
+    logs
+    *.log
+    npm-debug.log*
+    yarn-debug.log*
+    yarn-error.log*
 
-- [ ] __50:__ All questions are answered correctly.
+    # Runtime data
+    pids
+    *.pid
+    *.seed
+    *.pid.lock
+
+    # Directory for instrumented libs generated by jscoverage/JSCover
+    lib-cov
+
+    # Coverage directory used by tools like istanbul
+    coverage
+
+    # nyc test coverage
+    .nyc_output
+
+    # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+    .grunt
+
+    # Bower dependency directory (https://bower.io/)
+    bower_components
+
+    # node-waf configuration
+    .lock-wscript
+
+    # Compiled binary addons (http://nodejs.org/api/addons.html)
+    build/Release
+
+    # Dependency directories
+    node_modules/
+    jspm_packages/
+
+    # Typescript v1 declaration files
+    typings/
+
+    # Optional npm cache directory
+    .npm
+
+    # Optional eslint cache
+    .eslintcache
+
+    # Optional REPL history
+    .node_repl_history
+
+    # Output of 'npm pack'
+    *.tgz
+
+    # Yarn Integrity file
+    .yarn-integrity
+
+    # dotenv environment variables file
+    .env
+
+    # OSX system file
+    .DS_Store
+
+Q16:  What is the main difference between `==` and `===` in JavaScript?
+  A:  ‘==’ attempts to convert the values to the same type before testing if they're the same (‘type coercion’) for example "7" == 7 evaluates true because the second object is converted to a string before the comparison is made.  ‘===’ does not do this; it requires both objects to be of the same type for example "7" === 7 evaluates false because the first object is a string and second object is an integer.
