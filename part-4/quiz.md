@@ -6,19 +6,19 @@ The quiz is worth __50 points__ in total.
 
 _Reminder: you can use the internet to help you answer these questions :)_
 
-- When you run a command in the terminal, where does BASH look for that command?
-- On a UNIX computer, how do you stop a running process?
-- What packages do you have installed via homebrew?
-- On a UNIX computer, how do you find the process id of a running process?
-- In a terminal, what does control-c do?
-- In a terminal, what does control-a do?
-- In a terminal, what does control-e do?
-- What keyboard shortcut do you use to split the screen in your editor?
-- What keyboard shortcut do you use to split the screen in your terminal?
-- When a terminal command completes, how can you tell if it was successful or not?
-- What does your `~/.gitconfig` have in it? (paste the whole file here)
-- What is the difference between a relative and absolute path?
-- Lets say you have the following file structure
+Q1- When you run a command in the terminal, where does BASH look for that command?
+Q2- On a UNIX computer, how do you stop a running process?
+Q3- What packages do you have installed via homebrew?
+Q4- On a UNIX computer, how do you find the process id of a running process?
+Q5- In a terminal, what does control-c do?
+Q6- In a terminal, what does control-a do?
+Q7- In a terminal, what does control-e do?
+Q8- What keyboard shortcut do you use to split the screen in your editor?
+Q9- What keyboard shortcut do you use to split the screen in your terminal?
+Q10- When a terminal command completes, how can you tell if it was successful or not?
+Q11- What does your `~/.gitconfig` have in it? (paste the whole file here)
+Q12- What is the difference between a relative and absolute path?
+Q13- Lets say you have the following file structure
 
   ```
   ~
@@ -33,9 +33,9 @@ _Reminder: you can use the internet to help you answer these questions :)_
 
   And you were in the `linkedin-for-dancers` folder. What command would you use to change folders to the `pinterest-for-dogs` folder?
 
-- What keyboard shortcut do you use, in your editor, to go to a file in the project you have open?
-- What files or folders do you want all git repositories to ignore?
-- What is the main difference between `==` and `===` in JavaScript?
+Q14- What keyboard shortcut do you use, in your editor, to go to a file in the project you have open?
+Q15- What files or folders do you want all git repositories to ignore?
+Q16- What is the main difference between `==` and `===` in JavaScript?
 
 ### Requirements
 
