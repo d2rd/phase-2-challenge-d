@@ -1,0 +1,362 @@
+body {
+    background-color: teal;
+    margin-left: 10px;
+}
+
+
+/*classes*/
+.sectionHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    vertical-align: middle;
+    text-align: left;
+    justify-content: space-between; 
+}
+.headerTitle{
+    display: flex;
+    flex-direction: row;
+/*
+    align-item: flex-start;
+    vertical-align: middle;
+    text-align: left;
+    justify-content: space-around;
+    font-size: 28px;    
+*/
+}
+
+#btnCart {
+    display: flex;
+    direction: row;
+    justify-content: flex-start;
+    align-content: space-between;
+    vertical-align: middle;
+    
+    padding: 2px;
+    width: 137px;
+    height: 70px;
+    border-radius: 10%;
+    box-shadow: 30%;
+    margin: 10px;
+    line-height: 50px;
+    
+    text-align: left;
+    background: tomato;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+.numberCircle {
+    display: flex;
+    direction: row;
+    justify-content: center;
+    align-content: space-between;
+    vertical-align: baseline;
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+
+    background: tomato;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+
+    font: 13px Arial, sans-serif;
+/*    https://stackoverflow.com/questions/4861224/how-to-use-css-to-surround-a-number-with-a-circle*/
+}
+
+/* main section classes */
+
+/*.containerMain {
+     display: flex;
+     flex-direction: row;
+}*/
+.containerColumnLayout {
+    display: flex;
+    direction: row;
+    /*align-items: start;
+    justify-content: flex-end;*/
+}
+/* OVER-RIDES */
+ul {padding: 0; }   /* over-rides web-kit default padding */
+li {padding: 0; }   /* over-rides web-kit default padding */
+
+
+
+.columnHeader {
+    display: flex;
+    alignItem: flex-start;
+    justify-content: flex-start;
+    
+}
+/*SIDEBAR SECTION*/
+.bookShelvesSection {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    flex: 1;
+    border: 1.5px #888f91;
+    border-style: solid;
+    align-items: center;
+    justify-content: center;
+    background-color: #dbd6bf; /*#dbd6aa*/
+}
+#bookShelves {    /* should only use 'id' once for a specific thing */
+    font-family: Georgia, serif;
+    color: darkred;
+    background-color: #dbd6bf; /*#dbd6aa*/
+}
+.bookShelvesList {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+    align-content: center;
+    vertical-align: middle;
+    alignItems: flex-start;
+  
+}
+
+.bookShelvesItem {
+    display: flex;
+    direction: row;
+/*
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+    alignItems: flex-start;
+*/
+    
+    padding: 5px;
+    width: 140px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    line-height: 50px;
+
+    background: tomato;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;    
+}
+
+.backToTop{
+    display: flex;
+    direction: row;
+    padding: 5px;
+    width: 140px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    line-height: 50px;
+    
+    text-align: center;
+    background: tomato;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+/*Bookmark links*/
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    text-align: center;
+    background: tomato;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none
+}
+a:hover {
+    background: teal;
+}
+
+/*MAIN SECTION*/
+.mainBookSection {
+    display: flex;
+    flex-direction: column; /* set to rows because each child is a 3-item row */
+    order: 1;
+    flex: 4;
+    border: 1.5px #888f91;
+    border-style: solid;
+    align-items: center; /* controls vertical positioning of row */
+    background-color: #dbd6aa;
+}
+.mainBookHeader {
+    display: flex;
+    margin-right: auto;
+/*    alignItem: flex-start;*/
+    justify-content: flex-start;
+    
+    font-size: 28px; 
+    align-item: flex-start;
+
+    /*    vertical-align: middle;
+    text-align: left;
+    justify-content: space-around;
+   
+*/
+/*
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+    alignItems: flex-start;
+*/}
+.bookSectionList {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 6;
+    width: 95%;
+    padding: 5px;
+}
+.bookRowItem {     
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bookTitleItem {     
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+    alignItems: flex-start;
+    
+    padding: 5px;
+    width: 140px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    line-height: 50px;
+    
+    text-align: center;
+    background: tomato;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+.authorNameItem {     
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+    align-items: center;
+
+    padding: 5px;
+    width: 140px;
+    height: 50px;
+    margin: 10px;
+    line-height: 50px;
+
+    text-align: center;
+    background: tomato;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+.buyButton {
+    display: flex;
+    direction: row;
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+    
+    padding: 2px;
+    width: 70px;
+    height: 70px;
+    border-radius: 30%;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius:  30%;
+    border-bottom-left-radius:  30%;
+    box-shadow: 20%;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    line-height: 50px;
+
+    background: tomato;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+/* Styles for id'd elements in index.html*/
+
+#header {
+    font-family: Georgia, serif;
+    color: darkred;
+}
+
+#content {
+    font-family: Georgia, serif;
+    color: darkred;
+    background-color: #cdf1c3;
+    margin-top: 5;
+    margin-right: 5;
+    margin-bottom: 5;
+    margin-left: 5;
+
+}
+
+#groceryList {
+    font-family: Georgia, serif;
+    color: darkred;
+    background-color: #c0dbe2;
+}
+
+#btnAddToCart {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    border-radius: 50px;
+    width: 60px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: green;
+    border: 1.5px white;
+    border-style: solid;
+    outline: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+  
+}
+
+/*Utility Classes*/
+.utilBorderRed {
+    border: 1px solid red !important;
+}
+.utilBorderPurple {
+    border: 3px solid purple !important; /*TURN OFF BEFORE DEPLOYING*/
+}
+.utilBorderYellow{
+        border: 1px solid yellow !important;  /*TURN OFF BEFORE DEPLOYING*/
+}
+.utilBorderOrange{
+    border: 1px solid orange !important; /*TURN OFF BEFORE DEPLOYING*/    
+}
+.utilBorderBlue {
+    /*    border: 3px solid blue !important; TURN OFF BEFORE DEPLOYING*/
+}
