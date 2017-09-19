@@ -93,7 +93,7 @@ li {padding: 0; }   /* over-rides web-kit default padding */
     
 }
 /*SIDEBAR SECTION*/
-.bookShelvesSection {
+.sidebarFoodSection {
     display: flex;
     flex-direction: column;
     order: 2;
@@ -104,12 +104,12 @@ li {padding: 0; }   /* over-rides web-kit default padding */
     justify-content: center;
     background-color: #dbd6bf; /*#dbd6aa*/
 }
-#bookShelves {    /* should only use 'id' once for a specific thing */
+#sidebarFood {    /* should only use 'id' once for a specific thing */
     font-family: Georgia, serif;
     color: darkred;
     background-color: #dbd6bf; /*#dbd6aa*/
 }
-.bookShelvesList {
+.sidebarFoodList {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -120,7 +120,7 @@ li {padding: 0; }   /* over-rides web-kit default padding */
   
 }
 
-.bookShelvesItem {
+.sidebarFoodItem {
     display: flex;
     direction: row;
 /*
@@ -186,7 +186,7 @@ a:hover {
 }
 
 /*MAIN SECTION*/
-.mainBookSection {
+.mainGrocerySection {
     display: flex;
     flex-direction: column; /* set to rows because each child is a 3-item row */
     order: 1;
@@ -196,7 +196,7 @@ a:hover {
     align-items: center; /* controls vertical positioning of row */
     background-color: #dbd6aa;
 }
-.mainBookHeader {
+.mainGroceryHeader {
     display: flex;
     margin-right: auto;
 /*    alignItem: flex-start;*/
@@ -216,19 +216,19 @@ a:hover {
     vertical-align: middle;
     alignItems: flex-start;
 */}
-.bookSectionList {
+.grocerySectionList {
     display: flex;
     flex-direction: column;
     flex-grow: 6;
     width: 95%;
     padding: 5px;
 }
-.bookRowItem {     
+.groceryItemRow {     
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.bookTitleItem {     
+.groceryItemName {     
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -251,7 +251,7 @@ a:hover {
     font-weight: bold;
     font-size: 24px;
 }
-.authorNameItem {     
+.groceryItemPrice {     
     display: flex;
     flex-direction: row;
     justify-content: center;
