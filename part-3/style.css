@@ -1,6 +1,6 @@
 body {
     background-color: teal;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 
@@ -21,7 +21,7 @@ body {
     vertical-align: middle;
     text-align: left;
     justify-content: space-around;
-    font-size: 28px;    
+    font-size: 21px;    
 */
 }
 
@@ -43,8 +43,9 @@ body {
     text-align: left;
     background: tomato;
     color: white;
+    font-family: Georgia, serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
 }
 .numberCircle {
     display: flex;
@@ -130,38 +131,41 @@ li {padding: 0; }   /* over-rides web-kit default padding */
     alignItems: flex-start;
 */
     
-    padding: 5px;
+    padding: 2px;
     width: 140px;
-    height: 50px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    height: 40px;
+    margin: 5px;
+    /*margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;*/
     line-height: 50px;
 
     background: tomato;
     color: white;
+    font-family: Georgia, serif;
     font-weight: bold;
-    font-size: 24px;    
+    font-size: 18px;    
 }
 
 .backToTop{
     display: flex;
     direction: row;
-    padding: 5px;
+    padding: 2px;
     width: 140px;
-    height: 50px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+      height: 40px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
     line-height: 50px;
     
     text-align: center;
     background: tomato;
     color: white;
+    font-family: Georgia, serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
 }
 /*Bookmark links*/
 ul, li {
@@ -177,8 +181,9 @@ a {
     text-align: center;
     background: tomato;
     color: white;
+    font-family: Georgia, serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
     text-decoration: none
 }
 a:hover {
@@ -201,8 +206,8 @@ a:hover {
     margin-right: auto;
 /*    alignItem: flex-start;*/
     justify-content: flex-start;
-    
-    font-size: 28px; 
+    font-family: Georgia, serif;
+    font-size: 21px; 
     align-item: flex-start;
 
     /*    vertical-align: middle;
@@ -221,7 +226,7 @@ a:hover {
     flex-direction: column;
     flex-grow: 6;
     width: 95%;
-    padding: 5px;
+    padding: 2px;
 }
 .groceryItemRow {     
     display: flex;
@@ -236,20 +241,22 @@ a:hover {
     vertical-align: middle;
     alignItems: flex-start;
     
-    padding: 5px;
+    padding: 2px;
     width: 140px;
-    height: 50px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    height: 40px;
+    margin: 5px;
+    /*margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;*/
     line-height: 50px;
     
     text-align: center;
     background: tomato;
     color: white;
+    font-family: Georgia, serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
 }
 .groceryItemPrice {     
     display: flex;
@@ -259,17 +266,18 @@ a:hover {
     vertical-align: middle;
     align-items: center;
 
-    padding: 5px;
-    width: 140px;
-    height: 50px;
-    margin: 10px;
+    padding: 2px;
+    width: 70px;
+    height: 40px;
+    margin: 5px;
     line-height: 50px;
 
     text-align: center;
     background: tomato;
     color: white;
+    font-family: Georgia, serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
 }
 .buyButton {
     display: flex;
@@ -277,26 +285,29 @@ a:hover {
     justify-content: center;
     align-content: center;
     vertical-align: middle;
+    align-items: center;
     
     padding: 2px;
-    width: 70px;
-    height: 70px;
-    border-radius: 30%;
-    border-top-left-radius: 30%;
+    width: 140px;
+    height: 40px;
+    border-radius: 5%;
+    /*border-top-left-radius: 30%;
     border-top-right-radius: 30%;
     border-bottom-right-radius:  30%;
-    border-bottom-left-radius:  30%;
+    border-bottom-left-radius:  30%;*/
     box-shadow: 20%;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin: 5px;
+    /*margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;*/
     line-height: 50px;
 
     background: tomato;
     color: white;
+    font-family: Georgia, serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
 }
 /* Styles for id'd elements in index.html*/
 
@@ -327,12 +338,13 @@ a:hover {
     flex-direction: column;
     order: 1;
     font-family: Georgia, serif;
-    font-size: 24px;
+    font-size: 18px;
     border-radius: 50px;
     width: 60px;
     height: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 5px;
+    /*margin-top: 5px;
+    margin-bottom: 5px;*/
     background-color: green;
     border: 1.5px white;
     border-style: solid;
