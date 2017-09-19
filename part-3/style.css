@@ -1,6 +1,6 @@
 body {
     background-color: teal;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 
@@ -12,16 +12,18 @@ body {
     vertical-align: middle;
     text-align: left;
     justify-content: space-between; 
+    border: solid 5px #888f91;
 }
 .headerTitle{
     display: flex;
     flex-direction: row;
+    margin-left: 5px;
 /*
     align-item: flex-start;
     vertical-align: middle;
     text-align: left;
     justify-content: space-around;
-    font-size: 28px;    
+    font-size: 21px;    
 */
 }
 
@@ -33,18 +35,19 @@ body {
     vertical-align: middle;
     
     padding: 2px;
-    width: 137px;
-    height: 70px;
-    border-radius: 10%;
+    width: 100px;
+    height: 40px;
+    border-radius: 5%;
     box-shadow: 30%;
     margin: 10px;
-    line-height: 50px;
+    line-height: 30px;
     
     text-align: left;
     background: tomato;
     color: white;
+    font-family: Georgia, serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
 }
 .numberCircle {
     display: flex;
@@ -58,7 +61,7 @@ body {
     width: 15px;
     height: 15px;
     padding: 2px;
-
+    margin: 10px;
     background: tomato;
     border: 2px solid #fff;
     color: #fff;
@@ -90,13 +93,16 @@ li {padding: 0; }   /* over-rides web-kit default padding */
     display: flex;
     alignItem: flex-start;
     justify-content: flex-start;
+    padding-left: 27.5%;
+    padding-right: 27.5%;
+    border: solid 1.5px #888f91;
     
 }
 /*SIDEBAR SECTION*/
 .sidebarFoodSection {
     display: flex;
     flex-direction: column;
-    order: 2;
+    order: 1;
     flex: 1;
     border: 1.5px #888f91;
     border-style: solid;
@@ -130,38 +136,42 @@ li {padding: 0; }   /* over-rides web-kit default padding */
     alignItems: flex-start;
 */
     
-    padding: 5px;
+    padding: 2px;
     width: 140px;
-    height: 50px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    line-height: 50px;
+    height: 40px;
+    margin: 5px;
+    /*margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;*/
+    line-height: 30px;
 
     background: tomato;
     color: white;
+    font-family: Georgia, serif;
     font-weight: bold;
-    font-size: 24px;    
+    font-size: 18px;    
 }
 
 .backToTop{
     display: flex;
     direction: row;
-    padding: 5px;
+    padding: 2px;
     width: 140px;
-    height: 50px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    line-height: 50px;
+    height: 40px;
+    margin: 5px;
+    /*margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    line-height: 30px;*/
     
     text-align: center;
     background: tomato;
     color: white;
+    font-family: Georgia, serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
 }
 /*Bookmark links*/
 ul, li {
@@ -177,8 +187,9 @@ a {
     text-align: center;
     background: tomato;
     color: white;
+    font-family: Georgia, serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
     text-decoration: none
 }
 a:hover {
@@ -189,7 +200,7 @@ a:hover {
 .mainGrocerySection {
     display: flex;
     flex-direction: column; /* set to rows because each child is a 3-item row */
-    order: 1;
+    order: 2;
     flex: 4;
     border: 1.5px #888f91;
     border-style: solid;
@@ -201,8 +212,9 @@ a:hover {
     margin-right: auto;
 /*    alignItem: flex-start;*/
     justify-content: flex-start;
-    
-    font-size: 28px; 
+    border: 1.5px #888f91;
+    font-family: Georgia, serif;
+    font-size: 21px; 
     align-item: flex-start;
 
     /*    vertical-align: middle;
@@ -221,7 +233,8 @@ a:hover {
     flex-direction: column;
     flex-grow: 6;
     width: 95%;
-    padding: 5px;
+    padding: 2px;
+    
 }
 .groceryItemRow {     
     display: flex;
@@ -236,20 +249,22 @@ a:hover {
     vertical-align: middle;
     alignItems: flex-start;
     
-    padding: 5px;
+    padding: 2px;
     width: 140px;
-    height: 50px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    line-height: 50px;
+    height: 40px;
+    margin: 5px;
+    /*margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;*/
+    line-height: 30px;
     
     text-align: center;
     background: tomato;
     color: white;
+    font-family: Georgia, serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
 }
 .groceryItemPrice {     
     display: flex;
@@ -259,17 +274,18 @@ a:hover {
     vertical-align: middle;
     align-items: center;
 
-    padding: 5px;
-    width: 140px;
-    height: 50px;
-    margin: 10px;
-    line-height: 50px;
+    padding: 2px;
+    width: 70px;
+    height: 40px;
+    margin: 5px;
+    line-height: 30px;
 
     text-align: center;
     background: tomato;
     color: white;
+    font-family: Georgia, serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
 }
 .buyButton {
     display: flex;
@@ -277,26 +293,29 @@ a:hover {
     justify-content: center;
     align-content: center;
     vertical-align: middle;
+    align-items: center;
     
     padding: 2px;
-    width: 70px;
-    height: 70px;
-    border-radius: 30%;
-    border-top-left-radius: 30%;
+    width: 140px;
+    height: 40px;
+    border-radius: 5%;
+    /*border-top-left-radius: 30%;
     border-top-right-radius: 30%;
     border-bottom-right-radius:  30%;
-    border-bottom-left-radius:  30%;
+    border-bottom-left-radius:  30%;*/
     box-shadow: 20%;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    line-height: 50px;
+    margin: 5px;
+    /*margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;*/
+    line-height: 30px;
 
     background: tomato;
     color: white;
+    font-family: Georgia, serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
 }
 /* Styles for id'd elements in index.html*/
 
@@ -327,12 +346,13 @@ a:hover {
     flex-direction: column;
     order: 1;
     font-family: Georgia, serif;
-    font-size: 24px;
+    font-size: 18px;
     border-radius: 50px;
     width: 60px;
     height: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 5px;
+    /*margin-top: 5px;
+    margin-bottom: 5px;*/
     background-color: green;
     border: 1.5px white;
     border-style: solid;
