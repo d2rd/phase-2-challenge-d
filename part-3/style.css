@@ -108,7 +108,7 @@ li {padding: 0; }   /* over-rides web-kit default padding */
     border: 5px #888f91;
     border-style: solid;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: #dbd6bf; /*#dbd6aa*/
 }
 #sidebarFood {    /* should only use 'id' once for a specific thing */
@@ -121,15 +121,19 @@ li {padding: 0; }   /* over-rides web-kit default padding */
     flex-direction: column;
     flex: 1;
     justify-content: flex-start;
-    align-content: center;
+    /*align-content: center;*/
     vertical-align: middle;
-    alignItems: flex-start;
+    align-Items: flex-start;
   
 }
 
 .sidebarFoodItem {
     display: flex;
-    direction: row;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    /*align-Items: flex-start;*/
 /*
     justify-content: center;
     align-content: center;
@@ -256,13 +260,16 @@ a:hover {
     width: 240px;
     height: 30px;
     margin: 5px;
+    line-height: 30px;
     /*margin-top: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
     margin-left: 5px;*/
-    line-height: 30px;
+
     
-    text-align: center;
+    /*text-align: center;*/
+    text-indent: 5px;
+
     background: tomato;
     color: white;
     font-family: Georgia, serif;
