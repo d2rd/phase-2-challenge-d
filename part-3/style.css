@@ -43,6 +43,7 @@ body {
     line-height: 30px;
     
     text-align: left;
+    text-indent: 3px;
     background: tomato;
     color: white;
     font-family: Georgia, serif;
@@ -91,11 +92,11 @@ li {padding: 0; }   /* over-rides web-kit default padding */
 
 .columnHeader {
     display: flex;
-    alignItem: flex-start;
+    align-Items: flex-start;
     justify-content: flex-start;
-    padding-left: 24.5%;
+    padding-left: 23.5%;
     padding-right: 24.5%;
-    border: solid 1.5px #888f91;
+    /*border: solid 1.5px #888f91;*/
     
 }
 /*SIDEBAR SECTION*/
@@ -104,7 +105,7 @@ li {padding: 0; }   /* over-rides web-kit default padding */
     flex-direction: column;
     order: 1;
     flex: 1;
-    border: 1.5px #888f91;
+    border: 5px #888f91;
     border-style: solid;
     align-items: center;
     justify-content: center;
@@ -209,13 +210,15 @@ a:hover {
 }
 .mainGroceryHeader {
     display: flex;
+    margin-left: 10px;
     margin-right: auto;
+
 /*    alignItem: flex-start;*/
     justify-content: flex-start;
     border: 1.5px #888f91;
     font-family: Georgia, serif;
     font-size: 21px; 
-    align-item: flex-start;
+    align-items: flex-start;
 
     /*    vertical-align: middle;
     text-align: left;
@@ -251,7 +254,7 @@ a:hover {
     
     padding: 2px;
     width: 240px;
-    height: 40px;
+    height: 30px;
     margin: 5px;
     /*margin-top: 5px;
     margin-right: 5px;
@@ -276,7 +279,7 @@ a:hover {
 
     padding: 2px;
     width: 70px;
-    height: 40px;
+    height: 30px;
     margin: 5px;
     line-height: 30px;
 
@@ -297,7 +300,7 @@ a:hover {
     
     padding: 2px;
     width: 140px;
-    height: 40px;
+    height: 35px;
     margin: 5px;
     /*margin-top: 5px;
     margin-right: 5px;
@@ -306,7 +309,7 @@ a:hover {
     line-height: 30px;
     
     /*border: solid 1.5px #888f91;*/
-    border-radius: 5%;
+    /*border-radius: 5%;*/
     /*border-top-left-radius: 30%;
     border-top-right-radius: 30%;
     border-bottom-right-radius:  30%;
