@@ -30,7 +30,7 @@ for (i in clientsFound){
     for (key in clientsFound[i]){
      var badKeys = [
         'company',
-        'no_employees'
+        'no_employees',
         'phone',
         'city',
         'state',

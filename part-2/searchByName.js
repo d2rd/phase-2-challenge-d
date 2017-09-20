@@ -21,6 +21,7 @@ const clientArray = JSON.parse(fs.readFileSync('/Users/d2rd/Users/d2rd/lgProject
     }
 
     var namesFound = clientArray.filter(byName); // NOTE: byName IS the callback.  runs filter method against new array 'namesFound' containing matches output by 'byName' helper function.
+console.log("Finding clients with name beginning with \'" + targetName + "\'.");
 // console.log(JSON.parse(namesFound));  // converts JSON string to object.
 console.log(namesFound + " in namesFound"); // print all the values of namesFound
 
