@@ -2,7 +2,7 @@ var {expect} = require ('chai')
 var {weekday, filterBetween, snippet, numProps}  = require('./functions')
 
 
-describe('weekday()', function () {
+describe('weekday()', function(){
   it('should return the day of the week for a given date', function(){
     let targetDate = new Date(1971, 6, 5)
     expect(weekday(targetDate)).to.equal("Sat")
@@ -32,11 +32,12 @@ describe('filterBetween()', function(){
    })
  })
 
-describe('snippet()', function () {
+describe('snippet()', function(){
   it('shortens the string given to the maxLength and adds the ellipsis character ("…") to the end of string, and then returns the shortened string.', function snippet(string, maxLength) {
-     var string = "Goodness is about character - integrity, honesty, kindness, generosity, moral courage, and the like. More than anything else, it is about how we treat other people.”;
+     var string = 'Goodness is about character - integrity, honesty, kindness, generosity, moral courage, and the like. More than anything else, it is about how we treat other people.';
+
       snippedString = string.substr(0,maxLength) + "...";
-      return(snippedString);
+      return console.log(snippedString);
     })
 
   let snippet = ("this is the string", fish)
@@ -44,3 +45,23 @@ describe('snippet()', function () {
    expect(snippet).to.throw(new Error('invalid input'))
   })
 })
+
+describe('numProps()'), function(){
+  it('returns the num of properties an object has. Ignore symbolic properties and count only the "own properties" (not inherited) of the object.', function numProps(obj){
+      let clients = {"id": 1, "rep_name": "Xymenes Dewer", "company": "Beahan, Swift and Hoppe", "no_employees": 742,
+        "phone": "1-(863)994-6147", "city": "Lakeland", "state": "Florida", "created_at": "11/4/2003"
+      };
+
+    function numProps(obj){
+      propCount = Object.keys(obj).length; 
+      return console.log(propCount);
+      });
+
+  let numProps = ("this is the string", fish)
+  it('should throw an error if maxLength is not passed through', function(){
+   expect(numProps).to.throw(new Error('invalid input'))
+  }) 
+  }
+  
+
+

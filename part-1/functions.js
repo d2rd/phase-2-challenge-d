@@ -18,7 +18,7 @@
 //filterBetween
         // Write a function filterBetween(array, min, max) that takes an array of numbers, a min value, and a max value. It returns a new array containing only the elements that are greater than or equal to min and less than or equal to max.
 
-    let numArray = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]; // source array
+    let numArray = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]; // source array.  ??? Should this be local to numsBetween()?  If so rename 1st argument in filterBetween() to avoid duplication.
 
     // let numsBetween = numArray.filter(numArray > minNum) &&  numArray.filter(numArray < maxNum);
     function filterBetween(numArray, minNum, maxNum) {  
@@ -33,7 +33,7 @@
         // Write a function snippet(string, maxlength) that shortens the string given to the maxlength and adds the ellipsis character ("…") to the end of string, and then returns the shortened string. If the string is shorter than the maxlength, just return the string unmodified.
     function snippet(string, maxlength) {
       snippedString = string.substr(0,maxlength) + "...";
-      return(snippedString);
+       return console.log(snippedString);
     }
 
 
@@ -51,8 +51,8 @@
         "created_at": "11/4/2003"
       };
 
-    function numProps(clients){
-      propCount = Object.keys(clients).length; // should be 8
+    function numProps(obj){
+      propCount = Object.keys(obj).length; // should be 8
       return console.log(propCount);  // should be 8
     }
     numProps(clients);  
