@@ -1,4 +1,6 @@
-	// 1.	searchByName.js takes one string argument (let's call it name), finds all the clients from clients.json who have a rep_name that starts with the name string, and prints the id and rep_name of each matching client.
+// 1.	searchByName.js takes one string argument (let's call it name), finds all the clients from clients.json who have a rep_name that starts with the name string, and prints the id and rep_name of each matching client.
+
+// Your searches should not be case-sensitive: i.e. a search for "Bob" is the same as a search for "bob".
 
 // 1. Get required resources
 const fs = require('fs'); //requires the node 'fs' library.
@@ -12,7 +14,8 @@ const clientArray = JSON.parse(fs.readFileSync('/Users/d2rd/Users/d2rd/lgProject
 // Attribution for helper function:  https://www.youtube.com/watch?v=q_MXH_Ponpg
     function byName(clientObj, index, clientData) { 
         // console.log(clientObj + " in clientObj");   
-      if (clientObj.name == targetName) {
+      if (clientObj.name.toLowerCase() == targetName.toLowerCase())
+      {
             return true;
         }
         else {
@@ -21,8 +24,11 @@ const clientArray = JSON.parse(fs.readFileSync('/Users/d2rd/Users/d2rd/lgProject
     }
 
     var namesFound = clientArray.filter(byName); // NOTE: byName IS the callback.  runs filter method against new array 'namesFound' containing matches output by 'byName' helper function.
-console.log("Finding clients with name beginning with \'" + targetName + "\'.");
+
+    console.log("Finding clients with name beginning with \'" + targetName + "\'.");
+
 // console.log(JSON.parse(namesFound));  // converts JSON string to object.
+
 console.log(namesFound + " in namesFound"); // print all the values of namesFound
 
 for (i in namesFound){
@@ -37,7 +43,7 @@ for (i in namesFound){
         'created_at'
     ]
     if (badKeys.indexOf(key) == -1){
-        console.log( key + ": " + namesFound[i][key]);
+        console.log( key + ": " + namesFound[i][key] + "\n");
     }
     }        
 }
