@@ -52,15 +52,11 @@ describe('numProps()'), function(){
         "phone": "1-(863)994-6147", "city": "Lakeland", "state": "Florida", "created_at": "11/4/2003"
       };
 
-    function numProps(obj){
-      propCount = Object.keys(obj).length; 
-      return console.log(propCount);
-      });
+    function numProps(clients){
+      propCount = Object.keys(clients).length; // should be 8
+      return console.log(propCount);  // should be 8
+    }
 
-  let numProps = ("this is the string", fish)
-  it('should throw an error if maxLength is not passed through', function(){
-   expect(numProps).to.throw(new Error('invalid input'))
-  }) 
   }
   
 
