@@ -40,24 +40,28 @@ describe('snippet()', function(){
       return console.log(snippedString);
     })
 
-  let snippet = ("this is the string", fish)
-  it('should throw an error if maxLength is not passed through', function(){
-   expect(snippet).to.throw(new Error('invalid input'))
-  })
+    let snippet = ("this is the string", fish)
+
+    it('should throw an error if maxLength is not passed through', function(){
+    expect(snippet).to.throw(new Error('invalid input'))
+    })
 })
 
-describe('numProps()'), function(){
+describe('numProps()', function(){
   it('returns the num of properties an object has. Ignore symbolic properties and count only the "own properties" (not inherited) of the object.', function numProps(obj){
-      let clients = {"id": 1, "rep_name": "Xymenes Dewer", "company": "Beahan, Swift and Hoppe", "no_employees": 742,
-        "phone": "1-(863)994-6147", "city": "Lakeland", "state": "Florida", "created_at": "11/4/2003"
-      };
 
-    function numProps(clients){
+      let clients = {"id": 1, "rep_name": "Xymenes Dewer", "company": "Beahan, Swift and Hoppe", "no_employees": 742,
+        "phone": "1-(863)994-6147", "city": "Lakeland", "state": "Florida", "created_at": "11/4/2003"};
+
+      function numProps(clients){
       propCount = Object.keys(clients).length; // should be 8
       return console.log(propCount);  // should be 8
-    }
-
-  }
+      }
+  })
   
-
-
+  //test for empty object
+    let emptyObj = {};
+      it('should throw an error if 0', function(){
+    expect(snippet).to.throw(new Error('this object has no properties'))
+    })
+})

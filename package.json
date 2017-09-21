@@ -4,7 +4,7 @@
   "description": "Third Phase 2 interview challenge",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter list"
+    "test": "mocha --reporter list -r chai/register-expect "
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/d2rd/phase-2-challenge-d/issues"
   },
-  "homepage": "https://github.com/d2rd/phase-2-challenge-d#readme"
+  "homepage": "https://github.com/d2rd/phase-2-challenge-d/readme",
+  "dependencies": {
+    "chai": "^4.1.2"
+  }
 }
